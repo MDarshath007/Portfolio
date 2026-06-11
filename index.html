@@ -1,94 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammed Arshath | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Arshath A | Portfolio</title>
 
-<style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    background:#0f172a;
-    color:white;
-    text-align:center;
-}
-header{
-    padding:40px 20px;
-}
-h1{
-    margin-bottom:5px;
-}
-section{
-    max-width:700px;
-    margin:auto;
-    padding:20px;
-}
-.project{
-    background:#1e293b;
-    padding:15px;
-    margin:15px 0;
-    border-radius:10px;
-}
-a{
-    color:#38bdf8;
-    text-decoration:none;
-    font-weight:bold;
-}
-a:hover{
-    text-decoration:underline;
-}
-footer{
-    margin-top:40px;
-    padding:20px;
-    font-size:14px;
-    opacity:0.7;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-<h1>A. Mohammed Arshath</h1>
-<p>Junior Software Developer</p>
-<p>
-<a href="https://github.com/MDarshath007">GitHub</a> |
-<a href="https://www.linkedin.com/in/a-mohammed-arshath-737276309/">LinkedIn</a>
-</p>
-</header>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Arshath</div>
 
-<section>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<div class="project">
-<h3>Expense Tracker</h3>
-<p>Track income and expenses with real-time balance updates.</p>
-<a href="https://mdarshath007.github.io/Expense-Tracker/">Live Demo</a>
-</div>
+        <button id="theme-toggle">🌙</button>
+    </nav>
 
-<div class="project">
-<h3>To-Do List</h3>
-<p>Task manager with add, delete and persistent storage.</p>
-<a href="https://mdarshath007.github.io/Todo-list/">Live Demo</a>
-</div>
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-<div class="project">
-<h3>Calculator</h3>
-<p>Interactive calculator with arithmetic operations and error handling.</p>
-<a href="https://mdarshath007.github.io/Calculator/">Live Demo</a>
-</div>
+        <div class="hero-content">
+            <h1>Mohammed Arshath A</h1>
 
-<div class="project">
-<h3>Guess the Number Game</h3>
-<p>Random number guessing game with scoring system.</p>
-<a href="https://mdarshath007.github.io/Guess-the-number/">Live Demo</a>
-</div>
+            <h2>
+                <span id="typing"></span>
+            </h2>
 
-</section>
+            <p>
+                Computer Science and Business Systems student passionate
+                about Web Development, Docker, APIs and building practical
+                software solutions.
+            </p>
 
-<footer>
-© 2026 Mohammed Arshath
-</footer>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+
+                <a href="Mohammed Arshath A.pdf"
+                    class="btn secondary"
+                    download>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                Computer Science and Business Systems student skilled in HTML, CSS, Bootstrap, and JavaScript. Experienced in building responsive web applications, integrating REST APIs, handling JSON data and working with asynchronous JavaScript. Familiar with Git, GitHub, Linux, and Docker.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-docker"></i>
+                <h3>Docker</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>REST API</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-linux"></i>
+                <h3>Linux Basics</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-layer-group"></i>
+                <h3>Docker Compose</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- PLAYSTORE -->
+
+            <div class="project-card">
+                <h3>PlayStore Clone</h3>
+
+                <p>
+                    Google Play Store inspired web application that
+                    displays games through API integration.
+                </p>
+
+                <div class="project-buttons">
+
+                    <a href="https://mdarshath007.github.io/PlayStore-Clone/"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a href="https://github.com/MDarshath007/PlayStore-Clone"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- WEATHER -->
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+
+                <p>
+                    Real-time weather application using API integration
+                    with responsive UI.
+                </p>
+
+                <div class="project-buttons">
+
+                    <a href="https://mdarshath007.github.io/Weather-App/"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a href="https://github.com/MDarshath007/Weather-App"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- EXPENSE TRACKER -->
+
+            <div class="project-card">
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    Personal finance management application to track
+                    expenses and income.
+                </p>
+
+                <div class="project-buttons">
+
+                    <a href="https://mdarshath007.github.io/Expense-Tracker/"
+                        target="_blank">
+                        Live Demo
+                    </a>
+
+                    <a href="https://github.com/MDarshath007/Expense-Tracker"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- DOCKER -->
+
+            <div class="project-card">
+                <h3>Dockerized MERN Application</h3>
+
+                <p>
+                    Containerized MERN application using Docker and
+                    Docker Compose.
+                </p>
+
+                <div class="project-buttons">
+
+                    <a href="https://github.com/MDarshath007"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications" class="section">
+
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/JS.png" alt="">
+                JavaScript for Beginners
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/Docker.png" alt="">
+                Getting Started with Docker
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/DevOpsCodeAlpha.png" alt="">
+                DevOps Virtual Internship
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/DevOpsEduskills.png" alt="">
+                DevOps and Cloud Automation 
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/HCI.png" alt="">
+                Human Computer Interaction 
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/CloudComputing.png" alt="">
+                Cloud Computing
+            </div>
+
+            <div class="certificate-card">
+                <img src="/Portfolio/certifications/OrganizationalBehaviour.png" alt="">
+                Organization Behaviour: Individual Dynamics in Organizations
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="section">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-links">
+
+            <a href="mailto:mohammedarshath1712@gmail.com">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+
+            <a href="https://github.com/MDarshath007"
+                target="_blank">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/mohammed-arshath-a-737276309/"
+                target="_blank">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            © <span id="year"></span> Mohammed Arshath A. All Rights Reserved.
+        </p>
+    </footer>
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
