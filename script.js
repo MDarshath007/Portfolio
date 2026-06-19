@@ -35,7 +35,6 @@ const typingText = document.getElementById("typing");
 const roles = [
     "Aspiring Software Developer",
     "Web Developer",
-    "Docker Enthusiast",
     "CSBS Student",
     "API Integration Developer"
 ];

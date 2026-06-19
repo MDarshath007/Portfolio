@@ -1,368 +1,447 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohammed Arshath A | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Arshath</div>
+      <div class="logo">Arshath</div>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        <button id="theme-toggle">🌙</button>
+      <button id="theme-toggle">🌙</button>
     </nav>
 
     <!-- HERO -->
     <section id="home" class="hero">
+      <img src="ProfileImage.jpeg" alt="" />
+      <div class="hero-content">
+        <h1>Mohammed Arshath A</h1>
 
-        <div class="hero-content">
-            <h1>Mohammed Arshath A</h1>
+        <h2>
+          <span id="typing"></span>
+        </h2>
 
-            <h2>
-                <span id="typing"></span>
-            </h2>
+        <p>
+          Computer Science and Business Systems student passionate about Web
+          Development, Docker, APIs and building practical software solutions.
+        </p>
 
-            <p>
-                Computer Science and Business Systems student passionate
-                about Web Development, Docker, APIs and building practical
-                software solutions.
-            </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-
-                <a href="Mohammed Arshath A.pdf"
-                    class="btn secondary"
-                    download>
-                    Download Resume
-                </a>
-            </div>
+          <a href="Mohammed Arshath A.pdf" class="btn secondary" download>
+            Download Resume
+          </a>
         </div>
-
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
 
-        <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>
+          Computer Science and Business Systems student skilled in HTML, CSS,
+          Bootstrap, and JavaScript. Experienced in building responsive web
+          applications, integrating REST APIs, handling JSON data and working
+          with asynchronous JavaScript. Familiar with Git, GitHub, Linux, and
+          Docker.
+        </p>
 
-        <div class="about-content">
+        <br />
 
-            <p>
-                Computer Science and Business Systems student skilled in HTML, CSS, Bootstrap, and JavaScript. Experienced in building responsive web applications, integrating REST APIs, handling JSON data and working with asynchronous JavaScript. Familiar with Git, GitHub, Linux, and Docker.
-            </p>
+        <!-- <div class="skill-section">
+          <div class="web-tech-section">
+            <h2><i class="fa-solid fa-globe"></i> Web Technologies</h2>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap5 (Framework)</li>
+            <li>REST API</li>
+          </div>
 
+          <div class="tools-section">
+            <h2><i class="fa-solid fa-screwdriver-wrench"></i>   Tools</h2>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VSCode</li>
+            <li>Docker</li>
+            <li>Linux</li>
+          </div>
         </div>
+      </div> -->
+    </section>
 
+    <!-- EDUCATION -->
+
+    <section id="about" class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="education">
+        <i class="fa-solid fa-graduation-cap edu-icon"></i>
+        <p>2023 - 2027</p>
+        <h2>B.Tech in Computer Science and Business Systems</h2>
+        <p>E.G.S. Pillay Engineering College</p>
+      </div>
+
+      <div class="education">
+        <i class="fa-solid fa-school-flag edu-icon"></i>
+        <p>2021 - 2023</p>
+        <h2>HSC</h2>
+        <p>National Higher Secondary School Nagore</p>
+      </div>
+
+      <div class="education">
+        <i class="fa-solid fa-school edu-icon"></i>
+        <p>2020 - 2021</p>
+        <h2>SSLC</h2>
+        <p>E.G.S. Pillay Engineering College</p>
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
 
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-bootstrap"></i>
-                <h3>Bootstrap5</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-            </div>
-            
-            <div class="skill-card">
-                <i class="fas fa-server"></i>
-                <h3>REST API</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-docker"></i>
-                <h3>Docker</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-linux"></i>
-                <h3>Linux Basics</h3>
-            </div>
-
-            <div class="skill-card">
-                <i class="fas fa-layer-group"></i>
-                <h3>Docker Compose</h3>
-            </div>
-
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
         </div>
 
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-bootstrap"></i>
+          <h3>Bootstrap5</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>REST API</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-docker"></i>
+          <h3>Docker</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-git"></i>
+          <h3>Git</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-linux"></i>
+          <h3>Linux Basics</h3>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-layer-group"></i>
+          <h3>Docker Compose</h3>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
+
     <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
 
-        <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <!-- E-COMMERCE -->
 
-        <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="ProjectsImage/E-Commerce.png"
+            alt="PlayStore Clone Screenshot"
+          />
+          <h3>PlayStore Clone</h3>
 
-            <!-- PLAYSTORE -->
+          <p>
+            A simple E-Commerce app where products can be searched and added
+            into cart.
+          </p>
 
-            <div class="project-card">
-                <img src="/Portfolio/ProjectsImage/PlayStore.png" alt="PlayStore Clone Screenshot">
-                <h3>PlayStore Clone</h3>
+          <div class="project-buttons">
+            <a
+              href="https://mdarshath007.github.io/E-Commerce-App/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
 
-                <p>
-                    Google Play Store inspired web application that
-                    displays games through API integration.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="https://mdarshath007.github.io/PlayStore-Clone/"
-                        target="_blank">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/MDarshath007/PlayStore-Clone"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- WEATHER -->
-
-            <div class="project-card">
-                <img src="/Portfolio/ProjectsImage/WeatherApp.png" alt="PlayStore Clone Screenshot">
-                <h3>Weather App</h3>
-
-                <p>
-                    Real-time weather application using API integration
-                    with responsive UI.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="https://mdarshath007.github.io/Weather-App/"
-                        target="_blank">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/MDarshath007/Weather-App"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- EXPENSE TRACKER -->
-
-            <div class="project-card">
-                <img src="/Portfolio/ProjectsImage/ExpenseTracker.png" alt="Expense Tracker Screenshot">
-                <h3>Expense Tracker</h3>
-
-                <p>
-                    Personal finance management application to track
-                    expenses and income.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="https://mdarshath007.github.io/Expense-Tracker/"
-                        target="_blank">
-                        Live Demo
-                    </a>
-
-                    <a href="https://github.com/MDarshath007/Expense-Tracker"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- DOCKER -->
-
-            <div class="project-card">
-                <img src="/Portfolio/ProjectsImage/DockerCompose.png" alt="Dockerized MERN Application Screenshot">
-                <h3>Dockerized MERN Application</h3>
-
-                <p>
-                    Containerized MERN application using Docker and
-                    Docker Compose.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="https://github.com/MDarshath007"
-                        target="_blank">
-                        GitHub
-                    </a>
-
-                </div>
-            </div>
-
+            <a
+              href="https://github.com/MDarshath007/E-Commerce-App"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
 
+        <!-- PLAYSTORE -->
+
+        <div class="project-card">
+          <img
+            src="ProjectsImage/PlayStore.png"
+            alt="PlayStore Clone Screenshot"
+          />
+          <h3>PlayStore Clone</h3>
+
+          <p>
+            Google Play Store inspired web application that displays games
+            through API integration.
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://mdarshath007.github.io/PlayStore-Clone/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/MDarshath007/PlayStore-Clone"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- WEATHER -->
+
+        <div class="project-card">
+          <img
+            src="ProjectsImage/WeatherApp.png"
+            alt="PlayStore Clone Screenshot"
+          />
+          <h3>Weather App</h3>
+
+          <p>
+            Real-time weather application using API integration with responsive
+            UI.
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://mdarshath007.github.io/Weather-App/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/MDarshath007/Weather-App"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- EXPENSE TRACKER -->
+
+        <div class="project-card">
+          <img
+            src="ProjectsImage/ExpenseTracker.png"
+            alt="Expense Tracker Screenshot"
+          />
+          <h3>Expense Tracker</h3>
+
+          <p>
+            Personal finance management application to track expenses and
+            income.
+          </p>
+
+          <div class="project-buttons">
+            <a
+              href="https://mdarshath007.github.io/Expense-Tracker/"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/MDarshath007/Expense-Tracker"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- DOCKER -->
+
+        <div class="project-card">
+          <img
+            src="ProjectsImage/DockerCompose.png"
+            alt="Dockerized MERN Application Screenshot"
+          />
+          <h3>Dockerized MERN Application</h3>
+
+          <p>Containerized MERN application using Docker and Docker Compose.</p>
+
+          <div class="project-buttons">
+            <a href="https://github.com/MDarshath007" target="_blank">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CERTIFICATIONS -->
 
     <section id="certifications" class="section">
+      <h2 class="section-title">Certifications</h2>
 
-        <h2 class="section-title">Certifications</h2>
-
-        <div class="certificate-grid">
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/JS.png" target="_blank">
-                    <img src="/Portfolio/certifications/JS.png" alt="" >
-                </a>
-                JavaScript for Beginners
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/Docker.png" target="_blank">
-                    <img src="/Portfolio/certifications/Docker.png" alt="">
-                </a>
-                Getting Started with Docker
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/DevOpsCodeAlpha.png" target="_blank">
-                    <img src="/Portfolio/certifications/DevOpsCodeAlpha.png" alt="">
-                </a>
-                DevOps Virtual Internship
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/DevOpsEduskills.png" target="_blank">
-                    <img src="/Portfolio/certifications/DevOpsEduskills.png" alt="">
-                </a>
-                DevOps and Cloud Automation 
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/UIUX.png" target="_blank">
-                    <img src="/Portfolio/certifications/UIUX.png" alt="">
-                </a>
-                UI/UX Mastery with AI
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/ArtofPrompting.png" target="_blank">
-                    <img src="/Portfolio/certifications/ArtofPrompting.png" alt="">
-                </a>
-                Mastering the Art of Prompting
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/TCSION.png" target="_blank">
-                    <img src="/Portfolio/certifications/TCSION.png" alt="">
-                </a>
-                TCS iON Career Edge - Young Professional 
-            </div>
-            
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/HCI.png" target="_blank">
-                    <img src="/Portfolio/certifications/HCI.png" alt="">
-                </a>
-                Human Computer Interaction 
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/CloudComputing.png" target="_blank">
-                    <img src="/Portfolio/certifications/CloudComputing.png" alt="">
-                </a>
-                Cloud Computing
-            </div>
-
-            <div class="certificate-card">
-                <a href="/Portfolio/certifications/OrganizationalBehaviour.png" target="_blank">
-                    <img src="/Portfolio/certifications/OrganizationalBehaviour.png" alt="">
-                </a>
-                Organization Behaviour: Individual Dynamics in Organizations
-            </div>
-
+      <div class="certificate-grid">
+        <div class="certificate-card">
+          <a href="certifications/JS.png" target="_blank">
+            <img src="certifications/JS.png" alt="" />
+          </a>
+          JavaScript for Beginners
         </div>
 
+        <div class="certificate-card">
+          <a href="certifications/Docker.png" target="_blank">
+            <img src="certifications/Docker.png" alt="" />
+          </a>
+          Getting Started with Docker
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/DevOpsCodeAlpha.png" target="_blank">
+            <img src="certifications/DevOpsCodeAlpha.png" alt="" />
+          </a>
+          DevOps Virtual Internship
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/DevOpsEduskills.png" target="_blank">
+            <img src="certifications/DevOpsEduskills.png" alt="" />
+          </a>
+          DevOps and Cloud Automation
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/UIUX.png" target="_blank">
+            <img src="certifications/UIUX.png" alt="" />
+          </a>
+          UI/UX Mastery with AI
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/ArtofPrompting.png" target="_blank">
+            <img
+              src="certifications/ArtofPrompting.png"
+              alt=""
+              class="ArtofPrompting"
+            />
+          </a>
+          Mastering the Art of Prompting
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/TCSION.png" target="_blank">
+            <img src="certifications/TCSION.png" alt="" />
+          </a>
+          TCS iON Career Edge - Young Professional
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/HCI.png" target="_blank">
+            <img src="certifications/HCI.png" alt="" />
+          </a>
+          Human Computer Interaction
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/CloudComputing.png" target="_blank">
+            <img src="certifications/CloudComputing.png" alt="" />
+          </a>
+          Cloud Computing
+        </div>
+
+        <div class="certificate-card">
+          <a href="certifications/OrganizationalBehaviour.png" target="_blank">
+            <img src="certifications/OrganizationalBehaviour.png" alt="" />
+          </a>
+          Organization Behaviour: Individual Dynamics in Organizations
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
 
     <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
 
-        <h2 class="section-title">Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:mohammedarshath1712@gmail.com">
+          <i class="fas fa-envelope"></i>
+          Email
+        </a>
 
-        <div class="contact-links">
+        <a href="https://github.com/MDarshath007" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
 
-            <a href="mailto:mohammedarshath1712@gmail.com">
-                <i class="fas fa-envelope"></i>
-                Email
-            </a>
-
-            <a href="https://github.com/MDarshath007"
-                target="_blank">
-                <i class="fab fa-github"></i>
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/mohammed-arshath-a-737276309/"
-                target="_blank">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </a>
-
-        </div>
-
+        <a
+          href="https://www.linkedin.com/in/mohammed-arshath-a-737276309/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
     </section>
 
     <!-- FOOTER -->
 
     <footer>
-        <p>
-            © <span id="year"></span> Mohammed Arshath A. All Rights Reserved.
-        </p>
+      <p>© <span id="year"></span> Mohammed Arshath A. All Rights Reserved.</p>
     </footer>
 
-    <button id="topBtn">
-        ↑
-    </button>
+    <button id="topBtn">↑</button>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

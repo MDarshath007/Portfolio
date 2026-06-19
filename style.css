@@ -103,7 +103,7 @@ body::after {
     justify-content: space-between;
     align-items: center;
 
-    padding: 18px 8%;
+    padding: 18px 3%;
 
     backdrop-filter: blur(20px);
     background: var(--glass);
@@ -152,12 +152,10 @@ body::after {
    HERO
 ========================= */
 .hero {
-    min-height: 100vh;
-
+    min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding: 2rem;
 }
@@ -190,6 +188,18 @@ body::after {
     gap: 15px;
     flex-wrap: wrap;
 }
+
+.hero img{
+    margin-right: 50px;
+    border-radius: 50px;
+    width: 400px;
+    transition: .3s;
+}
+
+.hero img:hover {
+    transform: translateY(-8px);
+}
+
 
 /* =========================
    BUTTONS
@@ -239,9 +249,7 @@ body::after {
     content: "";
     width: 70px;
     height: 4px;
-
     background: var(--primary);
-
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -254,10 +262,12 @@ body::after {
 .about-content,
 .skill-card,
 .project-card,
-.certificate-card {
+.certificate-card,
+.education,
+.hero img {
     background: var(--glass);
 
-    border: 1px solid var(--border);
+    border: 0px solid var(--border);
 
     backdrop-filter: blur(20px);
 
@@ -270,9 +280,44 @@ body::after {
    ABOUT
 ========================= */
 .about-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.skill-section
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-section li{
+    list-style: none ;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education{
+    text-align: start !important;
     padding: 40px;
     text-align: center;
     line-height: 1.9;
+    margin: 15px 0px 15px 0;
+    transition: .3s;
+}
+
+.education:hover {
+    transform: translateY(-4px);
+}
+
+.edu-icon{
+    margin-bottom: 20px;
+    color:rgb(59, 130, 246);
+    font-size: 3rem;
 }
 
 /* =========================
@@ -392,6 +437,7 @@ body::after {
    CONTACT
 ========================= */
 .contact-links {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -485,7 +531,15 @@ footer {
    MOBILE
 ========================= */
 @media(max-width:768px) {
-
+    .hero{
+        display: block;
+    }
+    .hero img{
+        border-radius: 35px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: 200px;
+    }
     .hero h1 {
         font-size: 2.5rem;
     }
