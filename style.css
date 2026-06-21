@@ -197,7 +197,14 @@ body::after {
 }
 
 .hero img:hover {
-    transform: translateY(-8px);
+    transform:scale(1.03);
+    box-shadow:
+    0 0 1px rgba(255, 255, 255, 0.15),
+    0 20px 40px #0099ff49;
+}
+.download-btn:hover{
+    color: white;
+    background: var(--primary);
 }
 
 
@@ -312,6 +319,11 @@ body::after {
 
 .education:hover {
     transform: translateY(-4px);
+    border: solid 1px #60d6fa;
+    box-shadow:
+    0 0 15px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 5px #3b82f6;
 }
 
 .edu-icon{
@@ -337,13 +349,21 @@ body::after {
 }
 
 .skill-card:hover {
-    transform: translateY(-8px);
+    border: solid 1px #60d6fa;
+    box-shadow:
+    0 0 15px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 5px #3b82f6;
 }
 
 .skill-card i {
     font-size: 3rem;
     color: var(--primary);
     margin-bottom: 15px;
+}
+
+.skill-card img{
+    width: 48px;
 }
 
 /* =========================
@@ -365,6 +385,11 @@ body::after {
 
 .project-card:hover {
     transform: translateY(-10px);
+    border: solid 1px #60d6fa;
+    box-shadow:
+    0 0 15px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 5px #3b82f6;
 }
 
 .project-card h3 {
@@ -393,16 +418,20 @@ body::after {
     text-decoration: none;
 
     padding: 10px 16px;
-
-    background: var(--primary);
-    color: white;
-
-    border-radius: 10px;
+    color: var(--text);
+    border: solid 1px rgb(0, 162, 255);
+    background-color: transparent;
+    border-radius: 30px;
 
     transition: .3s;
 }
 
 .project-buttons a:hover {
+    background: linear-gradient(135deg, rgb(0, 183, 255), rgb(96, 205, 255));
+    box-shadow:
+    0 0 0 rgba(255, 255, 255, 0.2),
+    0 10px 16px rgba(255, 255, 255, 0.12),
+    0 0 14px rgba(255, 255, 255, 0.08);
     transform: scale(1.05);
 }
 
@@ -431,6 +460,11 @@ body::after {
 
 .certificate-card:hover {
     transform: translateY(-8px);
+    border: solid 1px #60d6fa;
+    box-shadow:
+    0 0 15px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 5px #3b82f6;
 }
 
 /* =========================
@@ -461,7 +495,12 @@ body::after {
 
 .contact-links a:hover {
     transform: translateY(-5px);
-    color: var(--primary);
+    border-color: #60d6fa;
+    color: #60d6fa;
+    box-shadow:
+    0 0 0 rgba(255, 255, 255, 0.2),
+    0 10px 30px rgba(255, 255, 255, 0.12),
+    0 0 14px rgba(255, 255, 255, 0.08);
 }
 
 /* =========================
