@@ -7,7 +7,7 @@
    ROOT VARIABLES
 ========================= */
 :root {
-    --bg: #f5f7fb;
+    --bg: #e9ecf0;
     --bg-secondary: #ffffff;
     --text: #111827;
     --text-light: #6b7280;
@@ -292,6 +292,16 @@ body::after {
     padding: 40px;
     line-height: 1.9;
     margin-bottom: 30px;
+    transition: .3s;
+}
+
+.about-content:hover {
+    transform: scale(1.01);
+    border: solid 1px #60d6fa;
+    box-shadow:
+    0 0 15px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 5px #3b82f6;
 }
 
 .skill-section
@@ -318,7 +328,7 @@ body::after {
 }
 
 .education:hover {
-    transform: translateY(-4px);
+    transform: scale(1.01);
     border: solid 1px #60d6fa;
     box-shadow:
     0 0 15px #3b82f6,
@@ -349,6 +359,7 @@ body::after {
 }
 
 .skill-card:hover {
+    transform: scale(1.04);
     border: solid 1px #60d6fa;
     box-shadow:
     0 0 15px #3b82f6,
