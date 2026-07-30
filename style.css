@@ -219,6 +219,16 @@ body::after {
     transition: .3s;
 }
 
+.intern-list{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.intern-list i{
+    margin: 0;
+    padding-right: 5px;
+    font-size: x-small;
+}
+
 .primary {
     background: var(--primary);
     color: white;
